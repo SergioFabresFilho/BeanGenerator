@@ -2,16 +2,11 @@ package com.sergiofilho.automother.service;
 
 import com.google.common.collect.ImmutableList;
 import com.sergiofilho.automother.annotation.Exclude;
-import com.sergiofilho.automother.service.typegenerator.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.Type;
-import java.util.Collection;
-import java.util.List;
 import java.util.Random;
-import java.util.Set;
 
 public final class BeanGenerator {
 
@@ -43,8 +38,7 @@ public final class BeanGenerator {
 		}
 
 		field.setAccessible(true);
-		Class<?> clazz = field.getType();
-		Object value = ValueGenerator.generate(clazz);
+		Object value = ValueGenerator.generate(field);
 
 		field.set(instance, value);
 	}
