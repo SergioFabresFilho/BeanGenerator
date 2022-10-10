@@ -26,7 +26,6 @@ public final class BeanGenerator {
 			ImmutableList<Field> fields = ImmutableList.copyOf(clazz.getDeclaredFields());
 
 			for (Field field : fields) {
-				Type type = field.getType();
 				populateField(field, object);
 			}
 
@@ -65,6 +64,8 @@ public final class BeanGenerator {
 			value = FloatGenerator.generate();
 		} else if (clazz.equals(String.class)) {
 			value = StringGenerator.generate();
+		} else if (clazz.isEnum()) {
+			value = EnumGenerator.generate(clazz);
 		} else {
 			throw new Exception("Unsupported field type: " + clazz);
 		}
