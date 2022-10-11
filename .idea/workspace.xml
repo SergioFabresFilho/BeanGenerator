@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Added functionality to generate arrays.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/annotation/CollectionOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/typegenerator/ListGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/BeanGeneratorUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/MyEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/Person.java" afterDir="false" />
+    <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Renamed packages">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ExampleBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/enumeration/ExampleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/BeanGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/BeanGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/ValueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/ValueGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +18,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -67,7 +62,7 @@
       <recent name="com.sergiofilho.automother.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeanGeneratorUnitTest.test">
+  <component name="RunManager" selected="JUnit.BeanGeneratorUnitTest.testAllFields">
     <configuration name="All in auto-mother" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="auto-mother" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,13 +75,29 @@
       <module name="auto-mother" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sergiofilho.automother.utils.*" />
+          <option name="PATTERN" value="com.sergiofilho.beangenerator.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sergiofilho.automother.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.sergiofilho.automother.utils.BeanGeneratorUnitTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sergiofilho.beangenerator.utils.BeanGeneratorUnitTest" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanGeneratorUnitTest.testAllFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auto-mother" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sergiofilho.beangenerator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sergiofilho.beangenerator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.sergiofilho.beangenerator.service.BeanGeneratorUnitTest" />
+      <option name="METHOD_NAME" value="testAllFields" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeanGeneratorUnitTest.testAllFields" />
         <item itemvalue="JUnit.BeanGeneratorUnitTest.test" />
         <item itemvalue="JUnit.All in auto-mother" />
       </list>
@@ -136,7 +148,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665429168208</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented functionality for generating Lists">
+      <created>1665442469889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665442469889</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented functionality for generating Lists">
+      <created>1665442515505</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665442515505</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Renamed packages">
+      <created>1665460012844</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665460012844</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,33 +187,35 @@
     <MESSAGE value="Added feature to generate simple objects and primitives." />
     <MESSAGE value="Added generation for enum types" />
     <MESSAGE value="Added functionality to generate arrays." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to generate arrays." />
+    <MESSAGE value="Implemented functionality for generating Lists" />
+    <MESSAGE value="Renamed packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed packages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/GenericTypeUtils.java</url>
           <line>16</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/GenericTypeUtils.java</url>
           <line>12</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/GenericTypeUtils.java</url>
           <line>15</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/BeanGeneratorUnitTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/utils/BeanGeneratorUnitTest.java</url>
           <line>13</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/typegenerator/ListGenerator.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ListGenerator.java</url>
           <line>23</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
