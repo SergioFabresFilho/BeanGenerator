@@ -1,4 +1,4 @@
-package com.sergiofilho.automother.annotation;
+package com.sergiofilho.beangenerator.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

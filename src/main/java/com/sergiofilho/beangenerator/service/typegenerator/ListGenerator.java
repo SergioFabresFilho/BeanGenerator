@@ -1,6 +1,6 @@
-package com.sergiofilho.automother.service.typegenerator;
+package com.sergiofilho.beangenerator.service.typegenerator;
 
-import com.sergiofilho.automother.annotation.CollectionOf;
+import com.sergiofilho.beangenerator.annotation.CollectionOf;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;

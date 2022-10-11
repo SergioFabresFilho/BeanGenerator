@@ -1,4 +1,4 @@
-package com.sergiofilho.automother.service.typegenerator;
+package com.sergiofilho.beangenerator.service.typegenerator;
 
 import java.util.Random;
 

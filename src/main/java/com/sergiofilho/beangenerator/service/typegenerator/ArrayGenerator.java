@@ -1,6 +1,6 @@
-package com.sergiofilho.automother.service.typegenerator;
+package com.sergiofilho.beangenerator.service.typegenerator;
 
-import com.sergiofilho.automother.service.ValueGenerator;
+import com.sergiofilho.beangenerator.service.ValueGenerator;
 
 import java.lang.reflect.Array;
 

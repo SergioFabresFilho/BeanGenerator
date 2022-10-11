@@ -1,7 +1,7 @@
-package com.sergiofilho.automother.service;
+package com.sergiofilho.beangenerator.service;
 
 import com.google.common.collect.ImmutableList;
-import com.sergiofilho.automother.annotation.Exclude;
+import com.sergiofilho.beangenerator.annotation.Exclude;
 import org.jetbrains.annotations.NotNull;
 
 import java.lang.reflect.Constructor;

@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Added feature to generate simple objects and primitives.">
+    <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Added functionality to generate arrays.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/annotation/CollectionOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/typegenerator/ListGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/BeanGeneratorUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/MyEnum.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/BeanGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/BeanGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/ValueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/ValueGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +23,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -44,15 +51,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sergiofilho.automother.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BeanGeneratorUnitTest.test">
+    <configuration name="All in auto-mother" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auto-mother" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BeanGeneratorUnitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="auto-mother" />
       <extension name="coverage">
@@ -72,6 +95,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BeanGeneratorUnitTest.test" />
+        <item itemvalue="JUnit.All in auto-mother" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +115,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665423303847</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added feature to generate simple objects and primitives.">
+      <created>1665423364756</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665423364756</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added generation for enum types">
+      <created>1665426043670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665426043670</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added functionality to generate arrays.">
+      <created>1665429168208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665429168208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,15 +152,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added feature to generate simple objects and primitives." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature to generate simple objects and primitives." />
+    <MESSAGE value="Added generation for enum types" />
+    <MESSAGE value="Added functionality to generate arrays." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to generate arrays." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/BeanGenerator.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/utils/GenericTypeUtils.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sergiofilho/automother/utils/BeanGeneratorUnitTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/automother/service/typegenerator/ListGenerator.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
