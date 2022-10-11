@@ -1,10 +1,12 @@
 package com.sergiofilho.beangenerator.model;
 
 import com.sergiofilho.beangenerator.annotation.CollectionOf;
+import com.sergiofilho.beangenerator.annotation.MapOf;
 import com.sergiofilho.beangenerator.model.enumeration.ExampleEnum;
 
 import java.lang.reflect.Type;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class ExampleBean {
@@ -24,6 +26,8 @@ public class ExampleBean {
 	private String myString;
 	@CollectionOf(type = Integer.class)
 	private Set<Integer> mySet;
+	@MapOf(keyType = String.class, elementType = Integer.class)
+	private Map<String, Integer> myMap;
 
 	//TODO: make array generator work with primitive types
 	public Integer[] getMyArray() {
@@ -76,5 +80,9 @@ public class ExampleBean {
 
 	public Set<Integer> getMySet() {
 		return mySet;
+	}
+
+	public Map<String, Integer> getMyMap() {
+		return myMap;
 	}
 }

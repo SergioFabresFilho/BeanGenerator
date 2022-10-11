@@ -4,6 +4,7 @@ import com.sergiofilho.beangenerator.service.typegenerator.*;
 
 import java.lang.reflect.Field;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public final class ValueGenerator {
@@ -19,6 +20,8 @@ public final class ValueGenerator {
 			value = ListGenerator.generate(field);
 		} else if (clazz.isAssignableFrom(Set.class)) {
 			value = SetGenerator.generate(field);
+		} else if (clazz.isAssignableFrom(Map.class)) {
+			value = MapGenerator.generate(field);
 		} else {
 			value = generate(clazz);
 		}
