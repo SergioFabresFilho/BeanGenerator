@@ -55,7 +55,11 @@ public final class ValueGenerator {
 		} else if (clazz.isArray()) {
 			value = ArrayGenerator.generateOfType(clazz.getComponentType());
 		}  else {
-			throw new Exception("Unsupported field type: " + clazz);
+			try {
+				value = BeanGenerator.create(clazz);
+			} catch (Exception exception) {
+				throw new Exception("Unsupported field type: " + clazz);
+			}
 		}
 
 		return value;

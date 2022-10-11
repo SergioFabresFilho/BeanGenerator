@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Renamed packages">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/annotation/MapOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/MapGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/annotation/CollectionOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/annotation/CollectionOf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/ValueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/ValueGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ExampleBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +17,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
