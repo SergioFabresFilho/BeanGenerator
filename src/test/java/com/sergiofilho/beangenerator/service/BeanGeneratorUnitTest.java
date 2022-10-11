@@ -25,5 +25,6 @@ public class BeanGeneratorUnitTest {
 		assertThat(exampleBean.getMyLong()).isNotNull();
 		assertThat(exampleBean.getMyShort()).isNotNull();
 		assertThat(exampleBean.getMyString()).isNotNull();
+		assertThat(exampleBean.getMySet()).isNotNull();
 	}
 }

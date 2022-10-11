@@ -3,7 +3,9 @@ package com.sergiofilho.beangenerator.model;
 import com.sergiofilho.beangenerator.annotation.CollectionOf;
 import com.sergiofilho.beangenerator.model.enumeration.ExampleEnum;
 
+import java.lang.reflect.Type;
 import java.util.List;
+import java.util.Set;
 
 public class ExampleBean {
 
@@ -20,6 +22,8 @@ public class ExampleBean {
 	private Long myLong;
 	private Short myShort;
 	private String myString;
+	@CollectionOf(type = Integer.class)
+	private Set<Integer> mySet;
 
 	//TODO: make array generator work with primitive types
 	public Integer[] getMyArray() {
@@ -68,5 +72,9 @@ public class ExampleBean {
 
 	public String getMyString() {
 		return myString;
+	}
+
+	public Set<Integer> getMySet() {
+		return mySet;
 	}
 }

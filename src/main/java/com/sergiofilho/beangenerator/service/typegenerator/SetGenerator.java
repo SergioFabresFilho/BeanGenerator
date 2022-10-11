@@ -4,16 +4,17 @@ import com.sergiofilho.beangenerator.annotation.CollectionOf;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-public final class ListGenerator {
+public final class SetGenerator {
 
 	private static final int DEFAULT_SIZE = 3;
 
-	private ListGenerator() {
+	private SetGenerator() {
 	}
 
-	public static List<?> generate(Field field) throws Exception {
+	public static Set<?> generate(Field field) throws Exception {
 		CollectionOf annotation = field.getAnnotation(CollectionOf.class);
 
 		if (annotation == null) {
@@ -21,6 +22,6 @@ public final class ListGenerator {
 					"Field " + field + " must be annotated with com.sergiofilho.automother.annotation.CollectionOf");
 		}
 
-		return Arrays.asList(ArrayGenerator.generateOfType(annotation.type()));
+		return new HashSet<>(Arrays.asList(ArrayGenerator.generateOfType(annotation.type())));
 	}
 }
