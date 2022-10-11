@@ -12,7 +12,6 @@ public class BeanGeneratorUnitTest {
 		ExampleBean exampleBean = BeanGenerator.create(ExampleBean.class);
 
 		assertThat(exampleBean).isNotNull();
-
 		assertThat(exampleBean.getMyArray()).isNotNull();
 		assertThat(exampleBean.getMyBoolean()).isNotNull();
 		assertThat(exampleBean.getMyByte()).isNotNull();
@@ -31,5 +30,6 @@ public class BeanGeneratorUnitTest {
 
 		assertThat(exampleBean.getComplexExampleBean().getMyInt()).isNotNull();
 		assertThat(exampleBean.getComplexExampleBean().getMyString()).isNotNull();
+		assertThat(exampleBean.getComplexExampleBean().getMyIntArray()).isNotNull();
 	}
 }

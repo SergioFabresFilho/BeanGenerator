@@ -11,8 +11,9 @@ public final class ArrayGenerator {
 	private ArrayGenerator() {
 	}
 
-	public static <T> T[] generateOfType(Class<T> clazz) throws Exception {
-		T[] array = (T[]) Array.newInstance(clazz, DEFAULT_ARRAY_SIZE);
+	public static <T> Object generateOfType(Class<?> clazz) throws Exception {
+
+		Object array = Array.newInstance(clazz, DEFAULT_ARRAY_SIZE);
 
 		for (int i = 0; i < DEFAULT_ARRAY_SIZE; i++) {
 			Array.set(array, i, ValueGenerator.generate(clazz));

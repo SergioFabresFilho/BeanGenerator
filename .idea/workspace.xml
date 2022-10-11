@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Renamed packages">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/TypeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto-mother.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auto-mother.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ArrayGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ArrayGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.sergiofilho.automother.utils" />
@@ -187,36 +193,5 @@
     <MESSAGE value="Implemented functionality for generating Lists" />
     <MESSAGE value="Renamed packages" />
     <option name="LAST_COMMIT_MESSAGE" value="Renamed packages" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/GenericTypeUtils.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/GenericTypeUtils.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/GenericTypeUtils.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/utils/BeanGeneratorUnitTest.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ListGenerator.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
