@@ -13,8 +13,8 @@ public final class ValueGenerator {
 	}
 
 	public static Object generate(Field field) throws Exception {
-		Object value;
 		Class<?> clazz = field.getType();
+		Object value;
 
 		if (clazz.isAssignableFrom(List.class)) {
 			value = ListGenerator.generate(field);
@@ -22,6 +22,9 @@ public final class ValueGenerator {
 			value = SetGenerator.generate(field);
 		} else if (clazz.isAssignableFrom(Map.class)) {
 			value = MapGenerator.generate(field);
+		} else if (clazz.equals(field.getDeclaringClass())) {
+//			throw new Exception("Recursive field " + field + " not supported.");
+			value = null;
 		} else {
 			value = generate(clazz);
 		}

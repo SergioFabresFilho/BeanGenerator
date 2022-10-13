@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Renamed packages">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/utils/TypeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto-mother.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auto-mother.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ArrayGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ArrayGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/ValueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/ValueGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" afterDir="false" />
     </list>
@@ -193,5 +190,16 @@
     <MESSAGE value="Implemented functionality for generating Lists" />
     <MESSAGE value="Renamed packages" />
     <option name="LAST_COMMIT_MESSAGE" value="Renamed packages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

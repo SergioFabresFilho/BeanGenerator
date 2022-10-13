@@ -4,6 +4,7 @@ public class ComplexExampleBean {
 	private String myString;
 	private int myInt;
 	private int[] myIntArray;
+	private ComplexExampleBean complexExampleBean;
 
 	public String getMyString() {
 		return myString;
@@ -15,5 +16,9 @@ public class ComplexExampleBean {
 
 	public int[] getMyIntArray() {
 		return myIntArray;
+	}
+
+	public ComplexExampleBean getComplexExampleBean() {
+		return complexExampleBean;
 	}
 }
