@@ -17,8 +17,9 @@ public final class MapGenerator {
 	public static Map<?, ?> generate(Field field) throws Exception {
 		MapOf annotation = field.getAnnotation(MapOf.class);
 
-		List<?> keys = Arrays.asList(ArrayGenerator.generateOfType(annotation.keyType()));
-		List<?> elements = Arrays.asList(ArrayGenerator.generateOfType(annotation.elementType()));
+		List<?> keys = Arrays.asList((Object[]) ArrayGenerator.generateOfType(annotation.keyType(), annotation.size()));
+		List<?> elements = Arrays.asList(
+				(Object[]) ArrayGenerator.generateOfType(annotation.elementType(), annotation.size()));
 
 		return IntStream.range(0, keys.size()).boxed().collect(Collectors.toMap(keys::get, elements::get));
 	}

@@ -29,6 +29,7 @@ public class BeanGeneratorUnitTest {
 		assertThat(exampleBean.getMySet()).isNotNull();
 		assertThat(exampleBean.getMySet().size()).isEqualTo(10);
 		assertThat(exampleBean.getMyMap()).isNotNull();
+		assertThat(exampleBean.getMyMap().size()).isEqualTo(100);
 		assertThat(exampleBean.getComplexExampleBean()).isNotNull();
 
 		// Assert that complex objects are populated correctly

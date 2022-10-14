@@ -26,8 +26,8 @@ public class ExampleBean {
 	private String myString;
 	@CollectionOf(type = Integer.class, size = 10)
 	private Set<Integer> mySet;
-	@MapOf(keyType = String.class, elementType = Integer.class)
-	private Map<String, Integer> myMap;
+	@MapOf(keyType = String.class, elementType = Integer.class, size = 100)
+	private Map<String, ComplexExampleBean> myMap;
 	private ComplexExampleBean complexExampleBean;
 
 	//TODO: make array generator work with primitive types
@@ -83,7 +83,7 @@ public class ExampleBean {
 		return mySet;
 	}
 
-	public Map<String, Integer> getMyMap() {
+	public Map<String, ComplexExampleBean> getMyMap() {
 		return myMap;
 	}
 

@@ -10,4 +10,5 @@ import java.lang.annotation.Target;
 public @interface MapOf {
 	Class<?> keyType();
 	Class<?> elementType();
+	int size() default 3;
 }
