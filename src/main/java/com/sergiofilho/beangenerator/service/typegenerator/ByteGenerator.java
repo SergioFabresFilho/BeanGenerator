@@ -6,7 +6,8 @@ public final class ByteGenerator {
 
 	private static final Random random = new Random();
 
-	private ByteGenerator() {}
+	private ByteGenerator() {
+	}
 
 	public static Byte generate() {
 		byte[] bytes = new byte[1];

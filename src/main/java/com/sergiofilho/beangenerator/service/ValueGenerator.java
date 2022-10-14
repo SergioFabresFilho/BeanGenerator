@@ -56,7 +56,7 @@ public final class ValueGenerator {
 			value = EnumGenerator.generate(clazz);
 		} else if (clazz.isArray()) {
 			value = ArrayGenerator.generateOfType(clazz.getComponentType());
-		}  else {
+		} else {
 			try {
 				value = BeanGenerator.create(clazz, generatedComplexTypes);
 			} catch (Exception exception) {

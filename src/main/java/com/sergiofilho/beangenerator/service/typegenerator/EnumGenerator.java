@@ -6,7 +6,8 @@ public final class EnumGenerator {
 
 	private static final Random random = new Random();
 
-	private EnumGenerator() {}
+	private EnumGenerator() {
+	}
 
 	public static Object generate(Class<?> clazz) {
 		Object[] constants = clazz.getEnumConstants();

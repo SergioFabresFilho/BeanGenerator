@@ -6,7 +6,8 @@ public final class CharacterGenerator {
 
 	private static final Random random = new Random();
 
-	private CharacterGenerator() {}
+	private CharacterGenerator() {
+	}
 
 	public static Character generate() {
 		return (char) random.nextInt(256);
