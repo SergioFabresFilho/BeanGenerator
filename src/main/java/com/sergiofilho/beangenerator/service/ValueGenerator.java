@@ -12,7 +12,7 @@ public final class ValueGenerator {
 	private ValueGenerator() {
 	}
 
-	public static Object generate(Field field) throws Exception {
+	public static Object generate(Field field, Set<Class<?>> generatedComplexTypes) throws Exception {
 		Class<?> clazz = field.getType();
 		Object value;
 
@@ -23,16 +23,15 @@ public final class ValueGenerator {
 		} else if (clazz.isAssignableFrom(Map.class)) {
 			value = MapGenerator.generate(field);
 		} else if (clazz.equals(field.getDeclaringClass())) {
-//			throw new Exception("Recursive field " + field + " not supported.");
 			value = null;
 		} else {
-			value = generate(clazz);
+			value = generate(clazz, generatedComplexTypes);
 		}
 
 		return value;
 	}
 
-	public static Object generate(Class<?> clazz) throws Exception {
+	public static Object generate(Class<?> clazz, Set<Class<?>> generatedComplexTypes) throws Exception {
 		Object value;
 
 		if (clazz.equals(Integer.TYPE) || clazz.equals(Integer.class)) {
@@ -59,7 +58,7 @@ public final class ValueGenerator {
 			value = ArrayGenerator.generateOfType(clazz.getComponentType());
 		}  else {
 			try {
-				value = BeanGenerator.create(clazz);
+				value = BeanGenerator.create(clazz, generatedComplexTypes);
 			} catch (Exception exception) {
 				throw new Exception("Unsupported field type: " + clazz);
 			}

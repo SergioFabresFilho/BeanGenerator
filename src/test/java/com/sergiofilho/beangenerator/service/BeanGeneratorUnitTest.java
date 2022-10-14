@@ -11,6 +11,7 @@ public class BeanGeneratorUnitTest {
 	void testAllFields() {
 		ExampleBean exampleBean = BeanGenerator.create(ExampleBean.class);
 
+		// Assert that simple fields are populated correctly1
 		assertThat(exampleBean).isNotNull();
 		assertThat(exampleBean.getMyArray()).isNotNull();
 		assertThat(exampleBean.getMyBoolean()).isNotNull();
@@ -28,9 +29,13 @@ public class BeanGeneratorUnitTest {
 		assertThat(exampleBean.getMyMap()).isNotNull();
 		assertThat(exampleBean.getComplexExampleBean()).isNotNull();
 
+		// Assert that complex objects are populated correctly
 		assertThat(exampleBean.getComplexExampleBean().getMyInt()).isNotNull();
 		assertThat(exampleBean.getComplexExampleBean().getMyString()).isNotNull();
 		assertThat(exampleBean.getComplexExampleBean().getMyIntArray()).isNotNull();
+
+		// Assert that recursive relations do not incur an infinite loop
 		assertThat(exampleBean.getComplexExampleBean().getComplexExampleBean()).isNull();
+		assertThat(exampleBean.getComplexExampleBean().getRecursiveRelationship()).isNull();
 	}
 }

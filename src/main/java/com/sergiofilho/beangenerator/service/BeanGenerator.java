@@ -6,13 +6,20 @@ import org.jetbrains.annotations.NotNull;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.util.Random;
+import java.util.HashSet;
+import java.util.Set;
 
 public final class BeanGenerator {
 
-	private static final Random random = new Random();
-
 	public static <T> T create(Class<T> clazz) {
+		Set<Class<?>> generatedComplexTypes = new HashSet<>();
+		return create(clazz, generatedComplexTypes);
+	}
+
+	static <T> T create(Class<T> clazz, Set<Class<?>> generatedComplexTypes) {
+		if (!generatedComplexTypes.add(clazz)) {
+			return null;
+		}
 
 		try {
 			Constructor<T> constructor = clazz.getConstructor();
@@ -21,7 +28,7 @@ public final class BeanGenerator {
 			ImmutableList<Field> fields = ImmutableList.copyOf(clazz.getDeclaredFields());
 
 			for (Field field : fields) {
-				populateField(field, object);
+				populateField(field, object, generatedComplexTypes);
 			}
 
 			return object;
@@ -32,13 +39,14 @@ public final class BeanGenerator {
 		return null;
 	}
 
-	private static void populateField(@NotNull Field field, @NotNull Object instance) throws Exception {
+	private static void populateField(@NotNull Field field, @NotNull Object instance, Set<Class<?>> generatedComplexTypes)
+			throws Exception {
 		if (field.isAnnotationPresent(Exclude.class)) {
 			return;
 		}
 
 		field.setAccessible(true);
-		Object value = ValueGenerator.generate(field);
+		Object value = ValueGenerator.generate(field, generatedComplexTypes);
 
 		field.set(instance, value);
 	}

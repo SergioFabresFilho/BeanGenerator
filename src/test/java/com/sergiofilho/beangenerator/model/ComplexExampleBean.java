@@ -5,6 +5,7 @@ public class ComplexExampleBean {
 	private int myInt;
 	private int[] myIntArray;
 	private ComplexExampleBean complexExampleBean;
+	private ExampleBean recursiveRelationship;
 
 	public String getMyString() {
 		return myString;
@@ -20,5 +21,9 @@ public class ComplexExampleBean {
 
 	public ComplexExampleBean getComplexExampleBean() {
 		return complexExampleBean;
+	}
+
+	public ExampleBean getRecursiveRelationship() {
+		return recursiveRelationship;
 	}
 }

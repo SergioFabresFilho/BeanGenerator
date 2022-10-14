@@ -16,7 +16,7 @@ public final class ArrayGenerator {
 		Object array = Array.newInstance(clazz, DEFAULT_ARRAY_SIZE);
 
 		for (int i = 0; i < DEFAULT_ARRAY_SIZE; i++) {
-			Array.set(array, i, ValueGenerator.generate(clazz));
+			Array.set(array, i, ValueGenerator.generate(clazz, null));
 		}
 
 		return array;
