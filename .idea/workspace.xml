@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9f615569-fe61-4c6d-96ee-47ac9e2eaecd" name="Changes" comment="Renamed packages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/BeanGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/BeanGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/ValueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/ValueGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/annotation/CollectionOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/annotation/CollectionOf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ArrayGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ArrayGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ComplexExampleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ListGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/ListGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/SetGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/SetGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/model/ExampleBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +65,26 @@
       <recent name="com.sergiofilho.automother.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in auto-mother">
+  <component name="RunManager" selected="JUnit.BeanGeneratorUnitTest.testAllFields">
     <configuration name="All in auto-mother" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="auto-mother" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanGeneratorUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auto-mother" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sergiofilho.beangenerator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sergiofilho.beangenerator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.sergiofilho.beangenerator.service.BeanGeneratorUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,8 +123,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in auto-mother" />
         <item itemvalue="JUnit.BeanGeneratorUnitTest.testAllFields" />
+        <item itemvalue="JUnit.BeanGeneratorUnitTest" />
+        <item itemvalue="JUnit.All in auto-mother" />
         <item itemvalue="JUnit.BeanGeneratorUnitTest.test" />
       </list>
     </recent_temporary>
@@ -200,6 +217,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/sergiofilho/beangenerator/service/BeanGeneratorUnitTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sergiofilho/beangenerator/service/typegenerator/SetGenerator.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

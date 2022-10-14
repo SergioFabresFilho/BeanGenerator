@@ -9,4 +9,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CollectionOf {
 	Class<?> type();
+	int size() default 3;
 }

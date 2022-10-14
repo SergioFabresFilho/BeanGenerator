@@ -5,6 +5,7 @@ import com.sergiofilho.beangenerator.annotation.CollectionOf;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public final class SetGenerator {
@@ -22,6 +23,15 @@ public final class SetGenerator {
 					"Field " + field + " must be annotated with com.sergiofilho.automother.annotation.CollectionOf");
 		}
 
-		return new HashSet<>(Arrays.asList(ArrayGenerator.generateOfType(annotation.type())));
+		Set<?> generatedSet;
+
+		// If the array is generated with repeated elements,
+		// the resulting set will have a smaller size than desired
+		do {
+			List<Object> list = Arrays.asList((Object[]) ArrayGenerator.generateOfType(annotation.type(), annotation.size()));
+			generatedSet = new HashSet<>(list);
+		} while (generatedSet.size() != annotation.size());
+
+		return generatedSet;
 	}
 }

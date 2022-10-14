@@ -12,10 +12,14 @@ public final class ArrayGenerator {
 	}
 
 	public static <T> Object generateOfType(Class<?> clazz) throws Exception {
+		return generateOfType(clazz, DEFAULT_ARRAY_SIZE);
+	}
 
-		Object array = Array.newInstance(clazz, DEFAULT_ARRAY_SIZE);
+	public static <T> Object generateOfType(Class<?> clazz, int size) throws Exception {
 
-		for (int i = 0; i < DEFAULT_ARRAY_SIZE; i++) {
+		Object array = Array.newInstance(clazz, size);
+
+		for (int i = 0; i < size; i++) {
 			Array.set(array, i, ValueGenerator.generate(clazz, null));
 		}
 

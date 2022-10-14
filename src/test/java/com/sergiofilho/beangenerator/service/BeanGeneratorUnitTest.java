@@ -22,10 +22,12 @@ public class BeanGeneratorUnitTest {
 		assertThat(exampleBean.getMyFloat()).isNotNull();
 		assertThat(exampleBean.getMyInteger()).isNotNull();
 		assertThat(exampleBean.getMyList()).isNotNull();
+		assertThat(exampleBean.getMyList().size()).isEqualTo(50);
 		assertThat(exampleBean.getMyLong()).isNotNull();
 		assertThat(exampleBean.getMyShort()).isNotNull();
 		assertThat(exampleBean.getMyString()).isNotNull();
 		assertThat(exampleBean.getMySet()).isNotNull();
+		assertThat(exampleBean.getMySet().size()).isEqualTo(10);
 		assertThat(exampleBean.getMyMap()).isNotNull();
 		assertThat(exampleBean.getComplexExampleBean()).isNotNull();
 

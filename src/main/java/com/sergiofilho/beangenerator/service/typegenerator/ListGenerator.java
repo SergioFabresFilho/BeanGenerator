@@ -21,6 +21,6 @@ public final class ListGenerator {
 					"Field " + field + " must be annotated with com.sergiofilho.automother.annotation.CollectionOf");
 		}
 
-		return Arrays.asList(ArrayGenerator.generateOfType(annotation.type()));
+		return Arrays.asList((Object[]) ArrayGenerator.generateOfType(annotation.type(), annotation.size()));
 	}
 }

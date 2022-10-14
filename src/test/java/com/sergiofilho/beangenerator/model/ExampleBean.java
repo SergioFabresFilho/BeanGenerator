@@ -19,12 +19,12 @@ public class ExampleBean {
 	private ExampleEnum myEnum;
 	private Float myFloat;
 	private Integer myInteger;
-	@CollectionOf(type = String.class)
+	@CollectionOf(type = String.class, size = 50)
 	private List<String> myList;
 	private Long myLong;
 	private Short myShort;
 	private String myString;
-	@CollectionOf(type = Integer.class)
+	@CollectionOf(type = Integer.class, size = 10)
 	private Set<Integer> mySet;
 	@MapOf(keyType = String.class, elementType = Integer.class)
 	private Map<String, Integer> myMap;
